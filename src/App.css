@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+:root {
+  /* Theme 1 */
+
+  --th1-color-main-bg: hsl(222, 26%, 31%);
+  --th1-color-keypad-toggle-bg: hsl(223, 31%, 20%);
+  --th1-color-screen-bg: hsl(224, 36%, 15%);
+
+  --th1-color-del-reset-bg: hsl(225, 21%, 49%);
+  --th1-color-del-reset-shadow: hsl(224, 28%, 35%);
+
+  --th1-color-equal-toggle: hsl(6, 63%, 50%);
+  --th1-color-equal-shadow: hsl(6, 70%, 34%);
+
+  --th1-color-key-bg: hsl(30, 25%, 89%);
+  --th1-color-key-shadow: hsl(28, 16%, 65%);
+
+  --th1-color-brand-2: hsl(221, 14%, 31%);
+  --th1-color-brand-1: hsl(0, 0%, 100%);
+
+  /* Theme 2 */
+
+  --th2-color-main-bg: hsl(0, 0%, 90%);
+  --th2-color-keypad-toggle-bg: hsl(0, 5%, 81%);
+  --th2-color-screen-bg: hsl(0, 0%, 93%);
+
+  --th2-color-del-reset-bg: hsl(185, 42%, 37%);
+  --th2-color-del-reset-shadow: hsl(185, 58%, 25%);
+
+  --th2-color-equal-toggle: hsl(25, 98%, 40%);
+  --th2-color-equal-shadow: hsl(25, 99%, 27%);
+
+  --th2-color-key-bg: hsl(45, 7%, 89%);
+  --th2-color-key-shadow: hsl(35, 11%, 61%);
+
+  --th2-color-brand-2: hsl(60, 10%, 19%);
+  --th2-color-brand-1: hsl(0, 0%, 100%);
+
+  /* Theme 3 */
+
+  --th3-color-main-bg: hsl(268, 75%, 9%);
+  --th3-color-keypad-toggle-bg: hsl(268, 71%, 12%);
+  --th3-color-screen-bg: hsl(268, 71%, 12%);
+
+  --th3-color-del-reset-bg: hsl(281, 89%, 26%);
+  --th3-color-del-reset-shadow: hsl(285, 91%, 52%);
+
+  --th3-color-equal-toggle: hsl(176, 100%, 44%);
+  --th3-color-equal-shadow: hsl(177, 92%, 70%);
+
+  --th3-color-key-bg: hsl(268, 47%, 21%);
+  --th3-color-key-shadow: hsl(290, 70%, 36%);
+
+  --th3-color-brand-1: hsl(52, 100%, 62%);
+  --th3-color-brand-3: hsl(198, 20%, 13%);
+  --th3-color-brand-2: hsl(0, 0%, 100%);
+
+  --font-league-spartan: "League Spartan", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-league-spartan);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.light {
+  --th1-color-main-bg: var(--th2-color-main-bg);
+  --th1-color-keypad-toggle-bg: var(--th2-color-keypad-toggle-bg);
+  --th1-color-screen-bg: var(--th2-color-screen-bg);
+
+  --th1-color-del-reset-bg: var(--th2-color-del-reset-bg);
+  --th1-color-del-reset-shadow: var(--th2-color-del-reset-shadow);
+
+  --th1-color-equal-toggle: var(--th2-color-equal-toggle);
+  --th1-color-equal-shadow: var(--th1-color-equal-shadow);
+
+  --th1-color-key-bg: var(--th2-color-key-bg);
+  --th1-color-key-shadow: var(--th2-color-key-shadow);
+
+  --th1-color-brand-2: var(--th2-color-brand-2);
+  --th1-color-brand-1: var(--th2-color-brand-2);
+}
+
+.purple {
+  --th1-color-main-bg: var(--th3-color-main-bg);
+  --th1-color-keypad-toggle-bg: var(--th3-color-keypad-toggle-bg);
+  --th1-color-screen-bg: var(--th3-color-screen-bg);
+
+  --th1-color-del-reset-bg: var(--th3-color-del-reset-bg);
+  --th1-color-del-reset-shadow: var(--th3-color-del-reset-shadow);
+
+  --th1-color-equal-toggle: var(--th3-color-equal-toggle);
+  --th1-color-equal-shadow: var(--th3-color-equal-shadow);
+
+  --th1-color-key-bg: var(--th3-color-key-bg);
+  --th1-color-key-shadow: var(--th3-color-key-shadow);
+
+  --th1-color-brand-2: var(--th3-color-brand-1);
+  --th1-color-brand-1: var(--th3-color-brand-1);
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background-color: var(--th1-color-main-bg);
+}
+
+.Header {
+  width: 100%;
+  max-width: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 6rem;
+}
+
+.Header-Logo {
+  text-decoration: none;
+  font-size: 5rem;
+  color: var(--th1-color-brand-1);
+  display: block;
+}
+
+.Header-ToggleBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.Header-ToggleBox > p {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: var(--th1-color-brand-1);
+}
+
+.Header-ToggleBox-Form-Nums {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.Header-ToggleBox-Form-Nums > p {
+  color: var(--th1-color-brand-1);
+  font-size: 1.6rem;
+}
+
+.Header-ToggleBox-Form-Inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.5rem;
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  background-color: var(--th1-color-keypad-toggle-bg);
+  padding: 0.5rem;
+}
+
+.Header-ToggleBox-Form-Inputs-Radio {
+  display: block;
+  appearance: none;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--th1-color-equal-toggle);
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.Header-ToggleBox-Form-Inputs-Radio:checked {
+  opacity: 1;
+}
+
+.Head {
+  max-width: 50rem;
+  margin: 0 auto 3rem;
+}
+
+.light .Head-Input {
+  background-color: var(--th2-color-screen-bg);
+}
+
+.Head-Input {
+  width: 100%;
+  outline: none;
+  text-align: right;
+  color: var(--th1-color-brand-1);
+  padding: 1.5rem 2rem;
+  font-size: 2.3rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 3.2rem;
+  background-color: var(--th1-color-keypad-toggle-bg);
+}
+
+.light .CalculBox {
+  background-color: var(--th2-color-keypad-toggle-bg);
+}
+
+.CalculBox {
+  width: 100%;
+  max-width: 50rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem;
+  background-color: var(--th1-color-screen-bg);
+  margin: auto;
+}
+
+.Key {
+  display: block;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: none;
+  padding: 1rem 0.5rem;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  border: none;
+  color: var(--th1-color-brand-2);
+  background-color: var(--th1-color-key-bg);
+  box-shadow: inset 0 -5px var(--th1-color-key-shadow);
+  transition: all 0.2s ease-in-out;
+}
+
+.Key:hover {
+  filter: brightness(130%);
+}
+
+.delKey {
+  color: var(--th1-color-brand-1);
+  background-color: var(--th1-color-del-reset-bg);
+  box-shadow: inset 0 -5px var(--th1-color-del-reset-shadow);
+  transition: all 0.2s ease-in-out;
+}
+
+.delKey:hover {
+  filter: brightness(150%);
+}
+
+.light .delKey {
+  color: var(--th2-color-brand-1);
+}
+
+.purple .delKey {
+  color: var(--th3-color-brand-2);
+}
+
+.light .resetKey {
+  color: var(--th2-color-brand-1);
+}
+
+.purple .resetKey {
+  color: var(--th3-color-brand-2);
+}
+
+.light .equalKey {
+  color: var(--th2-color-brand-1);
+}
+
+.purple .equalKey {
+  color: var(--th3-color-brand-3);
+}
+
+.resetKey {
+  grid-column: span 2;
+  color: var(--th1-color-brand-1);
+  background-color: var(--th1-color-del-reset-bg);
+  box-shadow: inset 0 -5px var(--th1-color-del-reset-shadow);
+  transition: all 0.2s ease-in-out;
+}
+
+.resetKey:hover {
+  filter: brightness(150%);
+}
+
+.equalKey {
+  grid-column: span 2;
+  color: var(--th1-color-brand-1);
+  background-color: var(--th1-color-equal-toggle);
+  box-shadow: inset 0 -5px var(--th1-color-equal-shadow);
+  transition: all 0.2s ease-in-out;
+}
+
+.equalKey:hover {
+  filter: brightness(150%);
+}
