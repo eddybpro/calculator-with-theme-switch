@@ -1,4 +1,4 @@
-# A simple Calculator for general purposes.
+# A simple Calculator for general purposes with a theme switcher.
 
 ## Why use it?
 It's useful for simple calculations.
