@@ -4,14 +4,14 @@
 It's useful for simple calculations.
 
 ## Features
-Add
-Multiply
-Subtract
-Divide
+- Add
+- Multiply
+- Subtract
+- Divide
 ## Built With
-love
-html
-css
-javascript
-react
-vite
+- love
+- html
+- css
+- javascript
+- react
+- vite
