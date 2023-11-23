@@ -1,4 +1,7 @@
-# A simple Calculator for general purposes with a theme switcher.
+#calc
+## Overview
+A simple Calculator for general purposes with a theme switcher.
+[live site](https://fastidious-souffle-630550.netlify.app)
 
 ## Why use it?
 It's useful for simple calculations.
